@@ -42,6 +42,18 @@ float division(int num1, int num2) {
   }
 }
 
+// Modulus
+float mod(int num1, int num2) {
+  if (num2 != 0) {
+    int mod_res = num1 % num2;
+    std::cout << mod_res << "\n";
+    return mod_res;
+  } else {
+    std::cout << "num2 can't be 0 \n";
+    return 0;
+  }
+}
+
 int main() {
   // Summation
   sum(12, 15); // 27
@@ -54,4 +66,7 @@ int main() {
   // Division
   division(12, 0); // num2 must not be 0
   division(12, 2); // 6
+
+  // Modulus
+  mod(10, 3);
 }
